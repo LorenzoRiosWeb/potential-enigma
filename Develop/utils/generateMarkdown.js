@@ -7,10 +7,10 @@ function renderLicenseBadge(license) {
 
 // Define the mapping of licenses to their corresponding badge URLs
     const licenseBadges = {
-      'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
-      'APACHE2.0': '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
-      'Boost1.0': '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)',
-      'MPL2.0': '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
+      'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]',
+      'APACHE2.0': '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]',
+      'Boost1.0': '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]',
+      'MPL2.0': '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]'
 };
 
 // Return the corresponding badge
@@ -25,7 +25,7 @@ function renderLicenseLink(license) {
 }
 
 // Define the mapping of licenses to their corresponding badge URLs
-const licenseBadges = {
+const licenseLinks = {
   'MIT': '(https://opensource.org/licenses/MIT)',
   'APACHE2.0': '(https://opensource.org/licenses/Apache-2.0)',
   'Boost1.0': '(https://www.boost.org/LICENSE_1_0.txt)',
@@ -89,6 +89,7 @@ ${data.usage}
 ## License
 ${renderLicenseBadge(data.license)}
 ${renderLicenseSection(data.license)}
+${renderLicenseLink(data.license)}
 
 ## Contributing
 Contributions are welcome. Please submit a pull request or open an issue for discussion.

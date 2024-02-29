@@ -65,7 +65,7 @@ function init() {
     .then((inquirerResponse) => {
         console.log("Generating ReadMe...!");
         const markdown = generateMarkdown(inquirerResponse);
-        writeToFile("Readme.md", markdown);
+        writeToFile("./dist/readme.md", markdown);
     })
     .catch((err) => {
         console.error(err);
