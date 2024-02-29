@@ -39,8 +39,18 @@ const questions = [
     },
     {
         type: "input",
+        name: "contributors",
+        message: "Was there any contributors?"
+    },
+    {
+        type: "input",
         name: "githubUserEmail",
         message: "What is your Github user email?"
+    },
+    {
+        type: "input",
+        name: "questions",
+        message: "FOr and questions regarding this project, please contact "
     }
 ];
 
