@@ -69,35 +69,35 @@ return licenseSections[license];
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ## Description
-  ${data.description}
-  
-  ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  
-  ## Installation
-  ${data.require}
-  
-  ## Usage
-  ${data.usage}
-  
-  ## License
-  ${renderLicenseBadge(data.license)}
-  ${renderLicenseSection(data.license)}
-  
-  ## Contributing
-  Contributions are welcome. Please submit a pull request or open an issue for discussion.
-  
-  ## Tests
-  ${data.test}
-  
-  ## Questions
-  For any questions regarding this project, please contact [${data.githubUserEmail}](mailto:${data.githubUserEmail}).
+    ## Description
+${data.description}
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${data.require}
+
+## Usage
+${data.usage}
+
+## License
+${renderLicenseBadge(data.license)}
+${renderLicenseSection(data.license)}
+
+## Contributing
+Contributions are welcome. Please submit a pull request or open an issue for discussion.
+
+## Tests
+${data.test}
+
+## Questions
+For any questions regarding this project, please contact [${data.githubUserEmail}](mailto:${data.githubUserEmail}).
 `;
 }
 
